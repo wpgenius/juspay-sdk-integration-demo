@@ -349,6 +349,7 @@ class PaymentHandlerConfig {
 		$this->loggingPath = normalizePath( $loggingPath );
 		$this->setLogFileHandler();
 		$this->responseKey = $responseKey;
+        $this->withCacert( plugin_dir_path( __FILE__ ) ."resources/cacert-2023-12-12.pem");
 		return $this;
 	}
 
